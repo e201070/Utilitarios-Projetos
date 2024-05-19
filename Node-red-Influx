@@ -1,4 +1,21 @@
-								Instalar Influxdb
+Netplan Ubuntu 22.04
+network:
+  ethernets:
+    ens160:
+      addresses:
+      - 99.98.97.2/24
+      nameservers:
+        addresses:
+        - 172.168.100.100
+        search:
+        - rcc.lss
+      routes:
+      - to: default
+        via: 99.98.97.1
+  version: 2
+
+________________________________________________________________________________________
+Instalar Influxdb
 # Ubuntu/Debian AMD64
 wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.1-amd64.deb
 sudo dpkg -i influxdb2-2.7.1-amd64.deb
