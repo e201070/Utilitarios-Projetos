@@ -1,0 +1,35 @@
+								Instalar Influxdb
+# Ubuntu/Debian AMD64
+wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.1-amd64.deb
+sudo dpkg -i influxdb2-2.7.1-amd64.deb
+
+
+________________________________________________________________________________________________________________________________________________________________
+
+https://www.cherryservers.com/blog/install-nodejs-on-ubuntu
+
+Comandos para INstalar NodeJS 18
+https://github.com/nodesource/distributions#ubuntu-versions
+
+
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+Criar o Repositorio
+# NODE_MAJOR=18
+# echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+
+
+Instala 0 NodeJs ( Desta forma vai instalar a versao 18.8 Compativel com Node red
+
+sudo apt-get update
+sudo apt-get install nodejs -y
+
+Atualizar a versão do NPM para a ultima
+ # sudo npm install -g npm@latest.
+
+Instalar o Node-Red
+
+sudo npm install -g --unsafe-perm node-red
