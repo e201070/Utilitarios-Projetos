@@ -32,4 +32,13 @@ Atualizar a versão do NPM para a ultima
 
 Instalar o Node-Red
 
-sudo npm install -g --unsafe-perm node-red
+sudo npm install -g --unsafe-perm node-red.
+
+## Install PM2 para iniciar node-red no sturtup
+sudo apt install -g pm2		
+which node-red
+pm2 start /usr/bin/node-red -- -v
+pm2 save
+pm2 startup systemd
+hdb@nred:~$ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u hdb --hp /home/hdb
+
