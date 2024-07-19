@@ -1,0 +1,8 @@
+###############################################################################
+#Dock Station Dell 22.04
+wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+sudo dpkg -y -i synaptics-repository-keyring.deb
+sudo apt update
+sudo apt install displaylink-driver
+sudo reboot
+##################################################################################
