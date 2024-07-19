@@ -1,5 +1,5 @@
 ###############################################################################
-#Dock Station Dell 22.04
+#Dock Station Dell 22.04 ( https://askubuntu.com/questions/1507373/install-displaylink-drivers-on-ubuntu-22-04-lts-fix-the-square-around-mouse-err )
 wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
 sudo dpkg -y -i synaptics-repository-keyring.deb
 sudo apt update
