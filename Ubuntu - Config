@@ -6,3 +6,33 @@ sudo apt update
 sudo apt install displaylink-driver
 sudo reboot
 ##################################################################################
+## Netplan Ubuntu 20.04
+network:
+  ethernets:
+    ens160:
+      addresses:
+      - 172.168.100.83/24
+      gateway4: 172.168.100.1
+      nameservers:
+        addresses:
+        - 172.160.100.100
+        search:
+        - rcc.lss
+  version: 2
+_______________________________________________________________________________________________________
+## Netplan Ubuntu 22.04
+network:
+  ethernets:
+    ens160:
+      addresses:
+      - 99.98.97.2/24
+      nameservers:
+        addresses:
+        - 172.168.100.100
+        search:
+        - rcc.lss
+      routes:
+      - to: default
+        via: 99.98.97.1
+  version: 2
+############################################################################################################
